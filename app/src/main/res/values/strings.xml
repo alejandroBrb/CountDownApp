@@ -2,4 +2,6 @@
     <string name="app_name">CountDown</string>
 
     <string name="main_activity_action_start_count_down">Iniciar</string>
+
+    <string name="main_activity_text_count_down_place_holder">00:00</string>
 </resources>
