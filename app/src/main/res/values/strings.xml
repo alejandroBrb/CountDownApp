@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CountDown</string>
+
+    <string name="main_activity_action_start_count_down">Iniciar</string>
+</resources>
