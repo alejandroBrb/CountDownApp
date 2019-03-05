@@ -4,7 +4,15 @@ package com.alejandrobrb.countdown
  * @author Alejandro Barba on 2/16/19.
  */
 interface MainContract {
-    interface View : ViewContract
+    interface View : ViewContract {
+        fun updateTime(timeLeft : String)
 
-    interface Presenter
+        fun stopAction()
+
+        fun startAction()
+    }
+
+    interface Presenter : PresenterContract{
+        fun dispatchTimerAction()
+    }
 }
