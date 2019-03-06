@@ -1,7 +1,8 @@
-package com.alejandrobrb.countdown
+package com.alejandrobrb.countdown.main
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.alejandrobrb.countdown.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 

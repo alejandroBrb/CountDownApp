@@ -1,4 +1,8 @@
-package com.alejandrobrb.countdown
+package com.alejandrobrb.countdown.main
+
+import com.alejandrobrb.countdown.CountDownCallback
+import com.alejandrobrb.countdown.TimerImpl
+import com.alejandrobrb.countdown.ViewContract
 
 /**
  * @author Alejandro Barba on 2/16/19.

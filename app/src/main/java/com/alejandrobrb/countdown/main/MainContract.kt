@@ -1,4 +1,7 @@
-package com.alejandrobrb.countdown
+package com.alejandrobrb.countdown.main
+
+import com.alejandrobrb.countdown.PresenterContract
+import com.alejandrobrb.countdown.ViewContract
 
 /**
  * @author Alejandro Barba on 2/16/19.
@@ -12,7 +15,7 @@ interface MainContract {
         fun startAction()
     }
 
-    interface Presenter : PresenterContract{
+    interface Presenter : PresenterContract {
         fun dispatchTimerAction()
     }
 }
