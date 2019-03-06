@@ -5,7 +5,6 @@ import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin
 import timber.log.Timber
 
-
 /**
  * @author Alejandro Barba on 3/6/19.
  */
@@ -28,5 +27,4 @@ class App : Application() {
             androidContext(androidContext = this@App)
         }
     }
-
 }

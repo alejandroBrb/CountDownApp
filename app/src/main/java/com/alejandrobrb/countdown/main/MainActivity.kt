@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import com.alejandrobrb.countdown.R
 import kotlinx.android.synthetic.main.activity_main.*
 
-
 class MainActivity : AppCompatActivity(), MainContract.View {
 
     private lateinit var mainPresenter: MainPresenter
@@ -15,6 +14,10 @@ class MainActivity : AppCompatActivity(), MainContract.View {
         setContentView(R.layout.activity_main)
         initializePresenter()
         setupWidgets()
+    }
+
+    override fun onPause() {
+        super.onPause()
     }
 
     override fun initializePresenter() {

@@ -41,8 +41,8 @@ class TimerImpl(private val countDownCallback: CountDownCallback) : Timer {
     companion object {
         private const val SECOND = 1_000
         private const val MINUTE: Int = 60 * SECOND
-        private const val HOUR : Int = 60 * MINUTE
+        private const val HOUR: Int = 60 * MINUTE
         private const val HOURS = 6
-        private const val TIME : Long = HOURS * HOUR.toLong()
+        private const val TIME: Long = HOURS * HOUR.toLong()
     }
 }

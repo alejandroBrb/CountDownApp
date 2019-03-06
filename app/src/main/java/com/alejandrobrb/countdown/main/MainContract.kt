@@ -8,7 +8,7 @@ import com.alejandrobrb.countdown.ViewContract
  */
 interface MainContract {
     interface View : ViewContract {
-        fun updateTime(timeLeft : String)
+        fun updateTime(timeLeft: String)
 
         fun stopAction()
 

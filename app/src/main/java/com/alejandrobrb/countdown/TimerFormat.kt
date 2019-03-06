@@ -23,6 +23,6 @@ class TimerFormat {
         val hour = String.format("%02d", hours)
         val min = String.format("%02d", minutes)
         val sec = String.format("%02d", seconds)
-        return "$hour:$min"
+        return "$hour:$min:$sec"
     }
 }
