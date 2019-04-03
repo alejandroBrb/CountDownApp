@@ -16,8 +16,14 @@ class MainActivity : AppCompatActivity(), MainContract.View {
         setupWidgets()
     }
 
+    override fun onResume() {
+        super.onResume()
+        mainPresenter.onAttach()
+    }
+
     override fun onPause() {
         super.onPause()
+        mainPresenter.onDetach()
     }
 
     override fun initializePresenter() {

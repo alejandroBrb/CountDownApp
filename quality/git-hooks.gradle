@@ -4,8 +4,8 @@ static def isLinuxOrMacOs() {
 }
 
 task copyGitHooks(type: Copy) {
-    description 'Copies the git hooks from team-zubut/git-hooks to the .git folder.'
-    from("${rootDir}/qualitiy/git-hooks/") {
+    description 'Copies the git hooks from /git-hooks to the .git folder.'
+    from("${rootDir}/quality/git-hooks/") {
         include '**/*.sh'
         rename '(.*).sh', '$1'
     }
@@ -14,7 +14,7 @@ task copyGitHooks(type: Copy) {
 }
 
 task installGitHooks(type: Exec) {
-    description 'Installs the pre-commit git hooks from team-zubut/git-hooks.'
+    description 'Installs the pre-commit git hooks from /git-hooks.'
     group 'git hooks'
     workingDir rootDir
     commandLine 'chmod'

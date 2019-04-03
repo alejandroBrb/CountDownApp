@@ -3,6 +3,7 @@ package com.alejandrobrb.countdown.main
 import com.alejandrobrb.countdown.CountDownCallback
 import com.alejandrobrb.countdown.TimerImpl
 import com.alejandrobrb.countdown.ViewContract
+import timber.log.Timber
 
 /**
  * @author Alejandro Barba on 2/16/19.
@@ -22,6 +23,14 @@ class MainPresenter : MainContract.Presenter {
 
     override fun <V : ViewContract> init(view: V) {
         this.view = view as MainContract.View
+    }
+
+    override fun onAttach() {
+        Timber.d("Recover time left")
+    }
+
+    override fun onDetach() {
+        Timber.d("Save time left")
     }
 
     override fun dispatchTimerAction() {

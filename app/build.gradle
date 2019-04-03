@@ -4,6 +4,8 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
+apply from: '../quality/git-hooks.gradle'
+
 android {
     compileSdkVersion 28
     defaultConfig {

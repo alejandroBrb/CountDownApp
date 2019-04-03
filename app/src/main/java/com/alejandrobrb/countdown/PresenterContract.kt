@@ -5,4 +5,8 @@ package com.alejandrobrb.countdown
  */
 interface PresenterContract {
     fun <V : ViewContract> init(view: V)
+
+    fun onAttach()
+
+    fun onDetach()
 }
