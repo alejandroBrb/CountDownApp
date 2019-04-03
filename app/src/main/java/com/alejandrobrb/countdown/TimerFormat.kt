@@ -11,10 +11,10 @@ class TimerFormat {
 
     var epoch: Long = 0
         set(value) {
-            hours = value / 3_600
-            var remainder = value.toInt() - hours * 3_600
-            minutes = remainder / 60
-            remainder -= minutes * 60
+            hours = value / MINUTES_SECONDS
+            var remainder = value.toInt() - hours * MINUTES_SECONDS
+            minutes = remainder / MINUTES
+            remainder -= minutes * MINUTES
             seconds = remainder
             field = value
         }
@@ -24,5 +24,10 @@ class TimerFormat {
         val min = String.format("%02d", minutes)
         val sec = String.format("%02d", seconds)
         return "$hour:$min:$sec"
+    }
+
+    companion object {
+        const val MINUTES_SECONDS = 3_600
+        const val MINUTES = 60
     }
 }
